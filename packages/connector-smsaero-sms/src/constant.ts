@@ -1,6 +1,6 @@
 import type { ConnectorMetadata } from '@logto/connector-kit';
 
-export const endpoint = 'https://api.twilio.com/2010-04-01/Accounts/{{accountSID}}/Messages.json';
+export const endpoint = `https://gate.smsaero.ru/v2/sms/send`;
 
 export const defaultMetadata: ConnectorMetadata = {
   id: 'smsaero-short-message-service',
