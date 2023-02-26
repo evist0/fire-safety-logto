@@ -16,11 +16,12 @@ RUN rm -rf packages/**/src
 RUN rm -rf packages/**/tsconfig*.json
 RUN rm -rf packages/**/*.config.js
 
-FROM ghcr.io/logto-io/logto:1.0.0-rc.1 as app
+FROM ghcr.io/logto-io/logto:1.0.0-rc.3 as app
 
 WORKDIR /etc/logto
 
 COPY --from=builder /etc/logto/packages/ ./packages/core/connectors
 
 EXPOSE 3001
+EXPOSE 3002
 ENTRYPOINT ["npm", "start"]

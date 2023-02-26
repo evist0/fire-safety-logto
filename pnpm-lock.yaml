@@ -15,7 +15,7 @@ importers:
   packages/connector-smsaero-sms:
     specifiers:
       '@jest/types': ^29.3.1
-      '@logto/connector-kit': 1.0.0-rc.0
+      '@logto/connector-kit': 1.0.0-rc.2
       '@rollup/plugin-commonjs': ^24.0.0
       '@rollup/plugin-json': ^6.0.0
       '@rollup/plugin-node-resolve': ^15.0.1
@@ -41,7 +41,7 @@ importers:
       typescript: ^4.9.4
       zod: ^3.20.2
     dependencies:
-      '@logto/connector-kit': 1.0.0-rc.0
+      '@logto/connector-kit': 1.0.0-rc.2
       '@silverhand/essentials': 2.1.0
       got: 12.5.3
       snakecase-keys: 5.4.4
@@ -746,13 +746,13 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@logto/connector-kit/1.0.0-rc.0:
-    resolution: {integrity: sha512-TVUOuCdKDlxVyfo24S87HNgsD5OvgCtIrYVyn109ny/ZIdLuu5Pzzet5lN9m7uZklX64fUZoto1bPzc3z7XGyw==}
+  /@logto/connector-kit/1.0.0-rc.2:
+    resolution: {integrity: sha512-3ln0L+PVbiWZmEmy5CwGzXN9BhYVdZHtOh/fOm5FUMkDD/0tOEhBUMHAp9V9hTBTb0THh7kRAcRmWhblN3oTOQ==}
     engines: {node: ^18.12.0}
     dependencies:
       '@logto/core-kit': 1.0.0-rc.0
       '@logto/language-kit': 1.0.0-rc.0
-      '@silverhand/essentials': 2.1.0
+      '@silverhand/essentials': 2.2.0
     optionalDependencies:
       zod: 3.20.2
     dev: false
@@ -938,6 +938,11 @@ packages:
 
   /@silverhand/essentials/2.1.0:
     resolution: {integrity: sha512-1/f+FZ+9+fq0GSueTp+8+7dY7SuXGc0b+k6Bsuod7HqMAZdJr42TUy6lphriThshiaAC/I9ZhXyKkphTkHfa9Q==}
+    engines: {node: ^16.13.0 || ^18.12.0 || ^19.2.0, pnpm: ^7}
+    dev: false
+
+  /@silverhand/essentials/2.2.0:
+    resolution: {integrity: sha512-xoj/wAnPUt9ZAzt7QCHhSKZPweZnNJU7tBYrDTf54db6L+++SiXYIyckKDY+vKkGACn9kTAWPF74qSfYt1OQtA==}
     engines: {node: ^16.13.0 || ^18.12.0 || ^19.2.0, pnpm: ^7}
     dev: false
 
